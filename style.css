@@ -83,8 +83,8 @@
   animation-duration: 1.5s;
 }
 
-label {
-  padding-bottom: 10px;
+ul li {
+  align-items: center;
 }
 
 @-webkit-keyframes fade {
