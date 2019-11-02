@@ -83,6 +83,10 @@
   animation-duration: 1.5s;
 }
 
+label {
+  padding-bottom: 10px;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
