@@ -19,7 +19,7 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
-// Submit after filling out forum action
+// Submit button of form
 $(document).ready(function(){
   $('select').formSelect();
 });
