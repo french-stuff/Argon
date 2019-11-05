@@ -23,3 +23,29 @@ function showSlides() {
 $(document).ready(function(){
   $('select').formSelect();
 });
+
+$("#submit-btn").on("click", function (event) {
+  event.preventDefault();
+  
+  var genre =$("#select-categories :selected").val();
+  
+  var queryURL =  "https://api.rawg.io/api/games?page_size=5&genres="+genre;
+            
+  
+   
+  $.ajax({
+     url: queryURL,
+     method: "GET"
+   })
+     
+     .then(function(response) {
+  
+      console.log(response);
+      for (let index = 0; index < 5; index++) {
+       var name= response.results[index].name
+        console.log(name);
+        let 
+      }
+     });
+
+})
