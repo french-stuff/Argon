@@ -56,7 +56,8 @@ $("#submit-btn").on("click", function (event) {
           trailerp.append(trailer);
           trailer.html(response.results[index].clip.clips.full);
           trailer.attr("target", "_blank")
-          trailer.attr("href", "response.results[index].clip.clips.full")
+          trailer.attr("href", response.results[index].clip.clips.full)
+          trailer.css("font-size","15px")
           game.append(trailerp);
         }
 
