@@ -28,8 +28,9 @@ $("#submit-btn").on("click", function (event) {
   event.preventDefault();
   $("#links").empty();
   var genre = $("#select-categories :selected").val();
+  var year=$("#select-year :selected").val();
 
-  var queryURL = "https://api.rawg.io/api/games?page_size=5&genres=" + genre + "&ordering=-rating&dates=2019-01-01,2020-01-01";
+  var queryURL = "https://api.rawg.io/api/games?page_size=5&genres=" + genre + "&ordering=-rating&dates="+year+"-01-01,"+year+"-12-31";
 
 
 //////////////////////////////////////////////API of Categories////////////////////////////////////////////////////////////////////////
