@@ -45,7 +45,7 @@ $("#submit-btn").on("click", function (event) {
       console.log(response);
       for (let index = 0; index < 5; index++) {
         var name = response.results[index].name;
-        console.log(name);
+        
         let game = $("<div>");
         let trailerp = $("<p>")
         let trailer = $("<a>");
@@ -53,6 +53,8 @@ $("#submit-btn").on("click", function (event) {
         game.css("font-size","20px")
         game.text("Game#"+(index+1)+": "+response.results[index].name);
         if (response.results[index].clip != null) {
+          trailerp.text(" click on the follow url to watch the trailer:  ")
+          trailerp.css("font-size", "15px")
           trailerp.append(trailer);
           trailer.html(response.results[index].clip.clips.full);
           trailer.attr("target", "_blank")
@@ -65,6 +67,8 @@ $("#submit-btn").on("click", function (event) {
 
 
       }
+
+      
     });
 
 })
