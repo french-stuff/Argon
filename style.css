@@ -5,6 +5,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  height: 50%;
 }
 
 /* Hide the images by default */
@@ -83,9 +84,15 @@
   animation-duration: 1.5s;
 }
 
-ul li {
-  align-items: center;
+footer {
+  position: fixed;
 }
+
+#icon-list {
+  display: inline-block;
+}
+
+
 
 @-webkit-keyframes fade {
   from {opacity: .4}
