@@ -72,3 +72,7 @@ $("#submit-btn").on("click", function (event) {
     });
 
 })
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
+});
