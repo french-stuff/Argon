@@ -42,7 +42,8 @@ for (let i = 0; i < gameArray.length; i++) {
             let href = title.link(url);
 
             $(newsTitle[i]).append(" - " + href);
-            $(newsContent[i]).children("p.indigo-text").text(contents);
+            $(newsContent[i]).children("p.indigo-text").css("word-wrap","break-word")
+            $(newsContent[i]).children("p.indigo-text").html(contents);
 
 
         });
@@ -52,3 +53,5 @@ for (let i = 0; i < gameArray.length; i++) {
 
 
 }
+
+
