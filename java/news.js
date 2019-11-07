@@ -15,6 +15,7 @@ let gameArray = [346110, 367520, 1121560, 578650, 271590, 582010, 381210, 108566
 
 let newsTitle = document.getElementsByClassName("card-title");
 let newsContent = document.getElementsByClassName("card-content");
+let cardImage = document.getElementsByClassName("card-image");
 
 
 for (let i = 0; i < gameArray.length; i++) {
@@ -40,7 +41,7 @@ for (let i = 0; i < gameArray.length; i++) {
             let url = Response.appnews.newsitems[0].url;
 
             let href = title.link(url);
-
+            $(cardImage[i]).children("a").attr("href", url);
             $(newsTitle[i]).append(" - " + href);
             $(newsContent[i]).children("p.indigo-text").text(contents);
 
