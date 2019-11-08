@@ -15,6 +15,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
 
 
 
@@ -58,10 +60,9 @@
                     <div id="card-1">
                         <div class="card">
                             <div class="card-image">
-                                <a href="https://media.rawg.io/media/stories/166/1660c09b6cbd82e6fa7b7af7f62dfbb9.mp4"
-                                    target="_blank"> <img src="img/ark.jpg " alt="ARK Game"></a>
+                                <a href=" " target="_blank"> <img src="img/ark.jpg " alt="ARK Game"></a>
                             </div>
-                            <span id="button-1">
+                            <span id="button-1"  onclick="increaseCounter(1)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -85,7 +86,7 @@
                                 <a href=" " target="_blank"> <img src="img/hollowKnight.jpg"
                                         alt="Hollow Knight Game"></a>
                             </div>
-                            <span id="button-2">
+                            <span id="button-2"  onclick="increaseCounter(2)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -106,7 +107,7 @@
                             <div class="card-image">
                                 <a href=" " target="_blank"> <img src="img/atelier.jpg" alt="Atelier Game"></a>
                             </div>
-                            <span id="button-3">
+                            <span id="button-3"  onclick="increaseCounter(3)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -136,7 +137,7 @@
                             <div class="card-image">
                                 <a href=" " target="_blank"> <img src="img/outer.jpg" alt="The Outer World Game"></a>
                             </div>
-                            <span id="button-4">
+                            <span id="button-4"  onclick="increaseCounter(4)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -158,7 +159,7 @@
                             <div class="card-image">
                                 <a href=" " target="_blank"> <img src="img/grand.jpg" alt="Grand Theft Auto 5 Game">
                             </div>
-                            <span id="button-5">
+                            <span id="button-5"  onclick="increaseCounter(5)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -179,7 +180,7 @@
                             <div class="card-image">
                                 <a href=" " target="_blank"> <img src="img/monster.jpg" alt="Monster Hunter Game">
                             </div>
-                            <span id="button-6">
+                            <span id="button-6" onclick="increaseCounter(6)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -207,7 +208,7 @@
                             <div class="card-image">
                                 <a href=" " target="_blank"> <img src="img/dead.jpg" alt="Dead by Daylight Game">
                             </div>
-                            <span id="button-7">
+                            <span id="button-7"  onclick="increaseCounter(7)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -229,7 +230,7 @@
                             <div class="card-image">
                                 <a href=" " target="_blank"> <img src="img/destiny.jpg" alt="Destiny 2 Game">
                             </div>
-                            <span id="button-8">
+                            <span id="button-8"  onclick="increaseCounter(8)">
                             <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
@@ -251,8 +252,8 @@
                                     
                                 <a href=" " target="_blank"> <img src="img/code.jpg" alt="Code Vein Game">
                             </div>
-                            <span id="button-9">
-                            <a href="#" class="halfway-fab btn-floating btn-large waves-effect waves-light pink">
+                            <span id="button-9"  onclick="increaseCounter(9)">
+                            <a href="#" class="halfway-fab btn-floating pink">
                                 <i class="material-icons">favorite</i>
                             </a>
                             </span>
@@ -333,6 +334,7 @@
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="java/news.js"></script>
+    <script src="java/database.js"></script>
 
 
 </body>
