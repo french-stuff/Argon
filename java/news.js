@@ -22,7 +22,7 @@ for (let i = 0; i < gameArray.length; i++) {
 
 
 
-    let queryURL = "https://cors-anywhere.herokuapp.com/api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=" + gameArray[i] + "&count=1&maxlength=100&format=json";
+    let queryURL = "https://cors-anywhere.herokuapp.com/api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=" + gameArray[i] + "&count=1&maxlength=600&format=json";
 
     $.ajax({
 
