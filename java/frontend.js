@@ -76,3 +76,18 @@ $("#submit-btn").on("click", function (event) {
 $(document).ready(function(){
   $('.fixed-action-btn').floatingActionButton();
 });
+
+
+
+/////////////////////////////////////////Parallax effect///////////////////////////////////////////////
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
+////////////////////////Modals//////////////////////////////////
+$(document).ready(function(){
+  $('.modal').modal();
+});
+
+
+
