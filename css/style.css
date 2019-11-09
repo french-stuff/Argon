@@ -1,0 +1,117 @@
+body {
+    background-image: url('../img/background.jpg');
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 670px) {
+  body{
+    min-height: 300px;
+  }
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: 20px;
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+}
+
+/* Column for left side */
+.col-left {
+  background: rgba(11, 0, 114, 0.5);
+  height: 400px;
+  border: 5px solid black;
+  padding: 20px;
+  
+  
+}
+
+/* Column for right side */
+.col-right {
+  background: rgba(11, 0, 114, 0.5);
+  height: 600px;
+  border: 5px solid black;
+  padding: 20px;
+ 
+  
+}
+
+
+
+/* Size of links inside column */
+.links li {
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  padding: 8px;
+  
+}
+
+/* Hover effect on links in column */
+
+  .firstL:hover, .firstL:active li { 
+    background: rgba(255, 255, 0, 0.884);
+  }
+
+  .secondL:hover, .secondL:active li { 
+    background: rgba(255, 255, 0, 0.884);
+  }
+
+  .thirdL:hover, .thirdL:active li { 
+    background: rgba(255, 255, 0, 0.884);
+  }
+
+  .input-field {
+    color: yellow;
+  }
+p {
+  color: white;
+}

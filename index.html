@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+  <!----Icons---->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3f9cd1599d.js" crossorigin="anonymous"></script>
+  <!--Font style-->
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+  <title>Unearth</title>
+</head>
+
+<body>
+
+  <!------Nav Bar------->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">Unearth</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="small material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+        <!----Nav Bar for Mobile---->
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-----Slide Show------->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/outerworld.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/death-stranding.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/warfare.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <!---------------------------------Parallax effect------------------------------------------->
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/background.jpg"></div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Agreement</h2>Some games featured here have mature content, this website is for those 18 and over.</p>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Agree</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>General</h4>
+            <p class="black-text">These Terms and Conditions ("Agreement") governs the use of the services ("Service") that are made available by Unearth.com Solutions Inc. ("Unearth.com", "we" or "us"). These Terms and Conditions represent the whole agreement and understanding between Unearth.com and the individual or entity who subscribes to our service ("Subscriber" or "you").
+
+                PLEASE READ THIS AGREEMENT CAREFULLY. By submitting your application and by your use of the Service, you agree to comply with all of the terms and conditions set out in this Agreement. Unearth.com may terminate your account at any time, with or without notice, for conduct that is in breach of this Agreement, for conduct that Unearth.com believes is harmful to its business, or for conduct where the use of the Service is harmful to any other party.
+                
+                Unearth.com may, in its sole discretion, change or modify this Agreement at any time, with or without notice. Such changes or modifications shall be made effective for all Subscribers upon posting of the modified Agreement to this web address (URL): http://www.unearth.comm/terms-and-conditions/. You are responsible to read this document from time to time to ensure that your use of the Service remains in compliance with this Agreement.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/reddead.jpg"></div>
+    </div>
+
+
+
+    <!-----Form of Questions/Just Browsing - Mobile/Desktop Version----->
+    <div class="container">
+
+
+      <h3 class="yellow-text">Discover a Game</h3>
+      <p>Dont know what game to play? Fill out the form and we'll recommend a list of the best games for you!</p>
+
+      <label style="font-size: 20px; color: white">Select console to play:</label>
+      <div class="input-field white" style="padding-left: 10px">
+        <select id="select-platform">
+          <option value="1">PC</option>
+          <option value="2">PlayStation</option>
+          <option value="3">Xbox</option>
+          <option value="4">IOS</option>
+          <option value="5">Android</option>
+          <option value="6">Apple Macintosh</option>
+          <option value="7">Linux</option>
+          <option value="8">Nintendo</option>
+          <option value="9">Atari</option>
+          <option value="10">Commodore / Amiga</option>
+          <option value="11">SEGA</option>
+          <option value="12">3DO</option>
+          <option value="13">Neo Geo</option>
+          <option value="14">Web</option>
+
+          ​
+
+        </select>
+
+      </div>
+
+      <label style="font-size: 20px; color: white">Select year of release:</label>
+      <div class="input-field white" style="padding-left: 10px">
+        <select id="select-year">
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+        </select>
+
+
+      </div>
+
+      </br>
+      <label style="font-size: 20px; color: white">Select Category:</label>
+      <div class="input-field white" style="padding-left: 10px">
+        <select id="select-categories">
+          <option value="racing">Racing</option>
+          <option value="adventure">Adventure</option>
+          <option value="action">Action</option>
+          <option value="role-playing-games-rpg">RPG</option>
+          <option value="shooter">Shooter</option>
+          <option value="indie">Indie</option>
+          <option value="strategy">Strategy</option>
+          <option value="casual">Casual</option>
+          <option value="simulation">Simulation</option>
+          <option value="arcade">Arcade</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="platformer">Platformer</option>
+          <option value="sports">Sports</option>
+          <option value="massively-multiplayer">Massively Multiplaye</option>
+          <option value="family">Family</option>
+          <option value="fighting">Fighting</option>
+          <option value="board-games">Board-Games</option>
+          <option value="educational">Educational</option>
+          <option value="card">Card</option>
+
+
+        </select>
+
+      </div>
+      <button class="btn waves-effect waves-light indigo-text yellow" type="submit" name="action" id="submit-btn">Submit
+        <i class="material-icons right indigo-text">send</i>
+      </button>
+
+
+      <div class="col-right">
+        <h3 class="yellow-text">Results</h3>
+        <p>Check out the lastest games right here!</p>
+        <div id="links">
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- This is the Footer -->
+
+
+    <footer class="page footer indigo darken-4">
+      <div class="container footer">
+        <div class="row white-text">
+
+
+
+          <div class="col s12 l12">
+            <h6 class="center">Follow Unearth on </h6>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col s12 l12">
+
+
+            <div class="center">
+              <p><a href="#" class="btn-floating btn-medium pulse indigo darken-3">
+                  <i class="fab fa-facebook-f center"></i>
+                </a>
+
+                <a href="#" class="btn-floating btn-medium pulse indigo darken-3">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" class="btn-floating btn-medium pulse indigo darken-3">
+                  <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#" class="btn-floating btn-medium pulse indigo darken-3">
+                  <i class="fab fa-snapchat-ghost"></i>
+                </a></p>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l12">
+            <ul class="unstyled center">
+              <li class="center"><a href="#">About</a></li>
+              <li class="center"><a href="#">Careers</a></li>
+              <li class="center"><a href="#">Contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container white-text col s12 l12">
+            <h6 class="center">© 2019</h6>
+
+          </div>
+        </div>
+
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="java/frontend.js"></script>
+  </div>
+</body>
+
+
+
+
+</html>
