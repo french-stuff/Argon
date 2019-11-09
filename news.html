@@ -15,6 +15,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <!------Fire Base------>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
 
@@ -49,7 +51,6 @@
 
     <div class="container">
         <h2 class="yellow-text">News</h2>
-
         <!-- ======================================================================================== -->
         <!-- first row -->
         <!-- ======================================================================================== -->
@@ -192,6 +193,9 @@
                             </a>
                             </span>
                         </div>
+                        <div id="mydiv">
+                            <span id="lastclicked"></span>
+                        </div>
                         <div class="card-content">
                             <span class="card-title">Monster Hunter World</span>
                             <p class="indigo-text"></p>
@@ -280,7 +284,7 @@
 
 
 
-    <!-- Footer -->
+    <!------------------- Footer --------------------------------->
 
 
     <footer class="page footer indigo darken-4">
@@ -342,9 +346,10 @@
 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="java/frontend.js"></script>
     <script src="java/news.js"></script>
     <script src="java/database.js"></script>
-
+    
 
 </body>
 
